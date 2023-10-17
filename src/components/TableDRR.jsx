@@ -25,7 +25,6 @@ function TableDRR() {
       const endDate = new Date(newEntry.endDate);
       const excludedDates = newEntry.datesExcluded.map(dateString => {
         // Parse the date in "dd-mm-yyyy" format
-        // console.log(dateString);
         const [day, month, year] = dateString.split('/');
         return new Date(year, month - 1, day); // Month is zero-based
       });
@@ -50,20 +49,13 @@ function TableDRR() {
       }).length;
     
       const noOfDays = totalDays - excludedDays;
-    
-      // console.log(`totalDays: ${totalDays}`);
-      // console.log(`excludedDays: ${excludedDays}`);
-      // console.log(`noOfDays: ${noOfDays}`);
-    
       return noOfDays;
     };
     
   
     
     function formattedDate(date) {
-      console.log("ho raha hai calll buddy")
       const [year,month,day] = date.split('/')
-      // return new Date(year,month-1,day);
       return `${day}/${month}/${year}`;
     }
 
@@ -84,7 +76,6 @@ function TableDRR() {
     const { name, value } = e.target;
 
     if(name === 'startdate' || name === 'enddate') {
-      // setIsEndDateValid(name === 'startdate' || isEndDateValid(value,newEntry.startDate));
 
       const newEndDate = value;
       const newStartDate = newEntry.startDate;
@@ -106,12 +97,6 @@ function TableDRR() {
     }
   };
 
-  // isEndDateValid = (startDate, endDate) => {
-  //   const startDateObj = new Date(startDate);
-  //   const endDateObj = new Date(endDate);
-  //   return startDateObj <= endDateObj; // Ensures that end date is not earlier than start date
-  // };
-  // Validity check
 
 
   const toggleFormVisibility = () => {
