@@ -50,7 +50,6 @@ body {
 }
 input[name="startDate"],
 input[name="endDate"] {
-  /* Your custom styles for Start Date and End Date go here */
   text-align: right;
   padding-right: 48px;
 
