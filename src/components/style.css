@@ -1,0 +1,76 @@
+/* styles.css */
+/* Add CSS styles for the entire table container */
+.table-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    max-width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  /* Style the table header */
+  th {
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Style individual table cells */
+  .table-cell {
+    padding: 12px;
+    border: 1px solid grey;
+    text-align: center;
+  }
+  
+  /* Style the "Add Entry" button */
+  .addEntryButton {
+    padding: 12px;
+    border: 1px solid grey;
+    background-color: lightblue;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .addEntryButton:hover {
+    background-color: blue;
+  }
+  
+  /* Style the "Submit" button */
+  .submitButton {
+    background-color: lightgreen;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid grey;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .submitButton:hover {
+    background-color: green;
+  }
+  
+  /* Style the input fields within the table */
+  .addEntryDiv input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  /* Style the "Month, Year" input field */
+  .addEntryDiv input[name="monthYear"] {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  /* Style the excluded dates input field */
+  .addEntryDiv input[name="datesExcluded"] {
+    font-style: italic;
+  }
+  
